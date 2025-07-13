@@ -6,7 +6,6 @@ build.sh
 Dockerfile
 .dockerignore
 Procfile
-runtime.txt
 .render.yaml
 
 # Python cache
