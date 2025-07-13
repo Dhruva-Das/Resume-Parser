@@ -1,4 +1,4 @@
-# Backend files
+# Backend files - EXCLUDE ALL PYTHON FILES
 app/
 requirements.txt
 requirements-fast.txt
@@ -7,12 +7,14 @@ Dockerfile
 .dockerignore
 Procfile
 .render.yaml
+runtime.txt
 
-# Python cache
+# Python cache and files
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
+*.py
 
 # Virtual environments
 venv/
@@ -39,4 +41,14 @@ Thumbs.db
 
 # Temporary files
 *.tmp
-*.temp 
+*.temp
+
+# Only include frontend files
+!index.html
+!styles.css
+!script.js
+!images/
+!files/
+!package.json
+!netlify.toml
+!_redirects 

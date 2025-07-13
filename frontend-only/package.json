@@ -1,0 +1,14 @@
+{
+  "name": "resume-parser-frontend-only",
+  "version": "1.0.0",
+  "description": "Frontend-only deployment for Resume Parser",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build required'",
+    "start": "echo 'Static site - no start required'"
+  },
+  "keywords": ["resume", "parser", "frontend", "static"],
+  "author": "",
+  "license": "MIT",
+  "private": true
+} 
