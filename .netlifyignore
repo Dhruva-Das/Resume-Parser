@@ -1,0 +1,43 @@
+# Backend files
+app/
+requirements.txt
+requirements-fast.txt
+build.sh
+Dockerfile
+.dockerignore
+Procfile
+runtime.txt
+.render.yaml
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Documentation
+README.md
+DEPLOYMENT.md
+RENDER_DEPLOYMENT_GUIDE.md
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp 
