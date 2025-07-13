@@ -3,7 +3,7 @@
 // For production: Update this to your deployed backend URL
 const API_BASE_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1' 
     ? 'http://localhost:8000' 
-    : 'https://resume-parser-6-njyc.onrender.com'; // Replace with your actual backend URL
+    : 'https://resume-parser-7-txrf.onrender.com'; // Replace with your actual backend URL
 
 // DOM Elements
 const uploadArea = document.getElementById('uploadArea');
