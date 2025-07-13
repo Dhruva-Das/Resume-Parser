@@ -1,14 +1,17 @@
 {
   "name": "resume-parser-frontend",
   "version": "1.0.0",
-  "description": "Frontend for Resume Parser",
+  "description": "Static frontend for Resume Parser",
   "main": "index.html",
   "scripts": {
     "build": "echo 'Static site - no build required'",
     "start": "echo 'Static site - no start required'"
   },
-  "keywords": ["resume", "parser", "frontend"],
+  "keywords": ["resume", "parser", "frontend", "static"],
   "author": "",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  }
 } 
