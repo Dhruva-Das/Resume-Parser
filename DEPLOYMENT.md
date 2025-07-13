@@ -35,14 +35,24 @@ This guide will help you deploy both the backend API and frontend to production.
 4. **Get your backend URL**:
    - Your app will be at `https://your-app-name.herokuapp.com`
 
-### Option 3: Render
+### Option 3: Render (Fast Build)
 
 1. **Sign up for Render** at [render.com](https://render.com)
 2. **Create a new Web Service**
 3. **Connect your GitHub repository**
 4. **Configure**:
-   - Build Command: `pip install -r requirements.txt`
+   - Build Command: `chmod +x build.sh && ./build.sh`
    - Start Command: `uvicorn app.main:app --host=0.0.0.0 --port=$PORT`
+
+### Option 4: Render with Docker (Fastest)
+
+1. **Sign up for Render** at [render.com](https://render.com)
+2. **Create a new Web Service**
+3. **Connect your GitHub repository**
+4. **Configure**:
+   - Environment: Docker
+   - Build Command: (leave empty - Docker will handle it)
+   - Start Command: (leave empty - Docker will handle it)
 
 ## Frontend Deployment (Netlify)
 
@@ -82,6 +92,15 @@ In Netlify dashboard:
    - Check if it connects to your backend
 
 ## Troubleshooting
+
+### Build Taking Too Long
+
+If your build is taking more than 10 minutes:
+
+1. **Use Docker deployment** (Option 4 above) - fastest method
+2. **Check your requirements.txt** - remove unnecessary dependencies
+3. **Use build caching** - platforms like Railway cache dependencies
+4. **Pre-download spacy model** locally and include it in your repo
 
 ### CORS Issues
 If you see CORS errors in the browser console:
