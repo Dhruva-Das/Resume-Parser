@@ -1,0 +1,13 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+spacy==3.7.2
+docx2txt==0.8
+# pytesseract==0.3.10  # Commented out - requires system dependencies
+pillow==10.1.0
+# cassandra-driver==3.28.0  # Commented out - not needed for basic functionality
+pdf2image==1.16.3
+# llama-index==0.9.8  # Commented out - heavy dependency
+# gradient==0.5.0  # Commented out - not needed for basic functionality
+python-dotenv==1.0.0
+PyPDF2==3.0.1
