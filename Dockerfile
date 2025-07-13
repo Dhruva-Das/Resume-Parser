@@ -20,6 +20,9 @@ RUN pip install --no-cache-dir --upgrade pip && \
 # Download spacy model
 RUN python -m spacy download en_core_web_sm
 
+# Download NLTK data
+RUN python -c "import nltk; nltk.download('punkt'); nltk.download('averaged_perceptron_tagger'); nltk.download('stopwords')"
+
 # Copy application code
 COPY . .
 
